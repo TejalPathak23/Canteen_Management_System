@@ -1,0 +1,23 @@
+</div class="loginForm mt-3">
+<div class="col border border-danger border-3 p-5 bg-dark text-white ">
+    <form action="CodeLogout.php" onsubmit="return validateForm()" method=post name="myForm">
+
+        <h1 class="log-in-heading"><span class="color-ch">L</span>OG &nbsp;<span class="color-ch">O</span>UT</h1>
+
+        <div class="mt-5">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="inputEmail" aria-describedby="emailHelp">
+
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" id="password" class="form-control" name="inputPassword" data-toggle="password">
+
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" onclick="myFunction()" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Show Password</label>
+        </div>
+        <button type="submit" class="btn btn-light mx-5" name="saveData">Submit</button>
+    </form>
+</div>

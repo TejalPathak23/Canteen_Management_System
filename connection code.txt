@@ -1,0 +1,51 @@
+
+                        <tbody>
+                            <?php
+
+                            include('dbcon.php');
+                            $ref_table = "contact";
+                            $fetchdata = $database->getReference($ref_table)->getValue();
+
+                            if ($fetchdata > 0) {
+                                //code yet to write
+                                foreach ($fetchdata as $key => $row) {
+                            ?>
+                                    <tr>
+                                        <td> <?= $row['firstname']; ?> </td>
+                                        <td> <?= $row['lastname']; ?> </td>
+                                        <td> <?= $row['email']; ?> </td>
+                                        <td> <?= $row['phone']; ?> </td>
+                                        <td>
+                                            <a href="edit.php?id=<?= $key;?>" class="btn btn-success">Edit</a>
+                                            <a href="" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+
+
+                                <?php
+
+                                }
+                            } else {
+                                //code yet to write
+
+                                ?>
+
+                                <tr>
+                                    <td colspan="6">No Record Found</td>
+                                </tr>
+                            <?php
+
+                            }
+
+
+
+
+                            ?>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>

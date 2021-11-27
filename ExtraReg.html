@@ -1,0 +1,158 @@
+<!-- Extra Registration page   -->
+<!-- Do not consider this in Autobot Project -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS if you want to cdn style link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- Bootstrap folder's files     -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <script src='bootstrap-5.0.2-dist\js\bootstrap.min.js'></script>
+
+
+    <!-- Custom Css Stylesheet     -->
+    <link rel="stylesheet" type="text/css" href="CSS\ExtraReg.css">
+
+    <!-- Title of the Page -->
+    <title>Admin_Reg_Page </title>
+</head>
+
+<body>
+
+    <!--  Heading -->
+    <div class="tittle-login">Autobot Admin</div>
+
+    <!-- Alert's - Dismisable   -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Hello Admin!</strong> You can login now.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 border border-light border-1">
+        <div class="container-fluid">
+            <a class="navbar-brand  ">Robo Fever</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">User Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Issues</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration form  -->
+    <div>
+        <div class="container ">
+            <div class="row  ">
+                <div class="col ">
+
+                </div class="Reg Form mt-3">
+                <div class="col border border-danger border-3 p-5 bg-dark text-white ">
+                    <form>
+
+                        <h1 class="log-in-heading"><span class="color-ch">L</span>OG &nbsp;<span
+                                class="color-ch">I</span>N</h1>
+
+                        <div class="mt-5">
+
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Plant Email Id" aria-describedby="emailHelp">
+
+                        </div>
+
+                        <div class="col my-2">
+                            <input type="text" class="form-control" placeholder="Plant Name" aria-label="plantName">
+                        </div>
+
+                        <div class="col my-2">
+                            <input type="text" class="form-control" placeholder="Plant Id" aria-label="plantId">
+                        </div>
+
+                        <div class="col my-2">
+                            <input type="text" class="form-control" placeholder="No. of Bots" aria-label="noOfBots">
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                        </div>
+                        <button type="submit" class="btn btn-light mx-5">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- buttons section  -->
+        <div>
+            <div class="col-md-12 text-center mt-3">
+                <button type="button" class="btn btn-danger">LogOut</button>
+                <button type="button" class="btn btn-outline-success mx-2 ">Back to homepage</button>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- Bootstrap starter Template extra code -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
